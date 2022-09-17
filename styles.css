@@ -1,0 +1,225 @@
+body {
+box-sizing: border-box;
+display: flex;
+position: absolute;
+overflow: auto;
+width: 100%;
+font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+position: absolute;
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+.left-navigation-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+ul {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-content: center;
+align-items: center;
+margin-block-start: 0px;
+padding-inline-start: 0px;
+margin-bottom: 0px;
+border-right: 1px solid grey;
+}
+
+ul>li {
+  list-style: none;
+  width: 100%;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  fill: blue;
+  opacity: 70%;
+}
+.author>img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.author {
+  margin-top: 280px;
+}
+.wrapper-for-gallery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: auto;
+  width: 80%;
+  background-color: white;
+}
+.number-of-images {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: grey;
+}
+.name-gallery-and-button-more {
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+button {
+  padding: 15px 60px;
+  font-size: 30px;
+  background: none;
+  border: 3px solid blue;
+}
+button>a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+.images-gallery {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+figure {
+  width: 100%;
+  height: auto;
+  display: block;
+margin-block-start: 0;
+margin-block-end: 0;
+margin-inline-start: 0;
+margin-inline-end: 0;
+position: relative;
+  }
+  .wrapper-icon-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-content: space-around;
+    align-items: center;
+justify-content: space-evenly;
+flex-wrap: nowrap;
+  }
+  .icon-on-hover {
+    width: 50px;
+        height: 50px;
+        fill: white;
+        opacity: 70%;
+        padding-left: 20%;
+  }
+figure img {
+  width: 100%;
+  height: 100%;
+
+}
+ul li a:hover .social__icon {
+  opacity: 100%;
+  border-right: 3px solid blue;
+}
+button:hover {
+  border: 5px solid blue;
+}
+figure:hover img {
+   filter: brightness(0.5);
+}
+
+figure:hover .wrapper-icon-hover {
+  z-index: 3;
+  display: flex;
+
+ }
+ .icon-on-hover:hover {
+   opacity: 100%;
+ }
+
+@media screen and (min-width: 768px) {
+  body {
+  box-sizing: border-box;
+  height: 100%;
+  justify-content: center;
+  }
+  .wrapper {
+    display: flex;
+    width: 70%;
+  }
+  .left-navigation-menu {
+    width: 10%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .first-menu-element {
+    margin-bottom: 50px;
+  }
+  svg {
+    width: 100%;
+    height: 100px;
+  }
+  .wrapper-for-gallery {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+.number-of-images {
+  height: 100px;
+  font-size: 30px;
+
+}
+.name-gallery-and-button-more {
+  height: 150px;
+}
+  h1 {
+    font-size: 60px;
+  }
+  .images-gallery {
+    gap: 30px;
+    height: 700px;
+  }
+  .wrapper-first-line, .wrapper-second-line {
+    display: flex;
+    height: 330px;
+    width: 100%;
+    gap: 40px;
+    align-items: stretch;
+  }
+  figure {
+    margin: 0;
+  }
+  .image-sky {
+    width: 32%;
+    }
+  .image-ship {
+    width: 67%;
+    flex-grow: 1;
+  }
+}
